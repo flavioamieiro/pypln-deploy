@@ -226,7 +226,7 @@ def install_system_packages():
         "python-dev", "mongodb", "pdftohtml", "git-core", "supervisor",
         "nginx", "python-virtualenv", "postgresql", "python-psycopg2",
         "libfreetype6-dev", "fonts-dejavu", "aspell-en", "aspell-pt",
-        "libjpeg-dev"])
+        "libjpeg-dev", "libblas-dev", "liblapack-dev", "gfortran"])
     sudo("apt-get update")
     sudo("apt-get install -y {}".format(packages))
     # Updating virtualenv is specially important since the default changed
